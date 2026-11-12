@@ -1,18 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:version='2' class='v2' expr:dir='data:blog.languageDirection'
-      xmlns='http://www.w3.org/1999/xhtml'
-      xmlns:b='http://www.google.com/2005/gml/b'
-      xmlns:data='http://www.google.com/2005/gml/data'
-      xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html lang="en" dir="ltr">
 <head>
-  <meta content='width=device-width, initial-scale=1' name='viewport'/>
-  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-  <title><data:blog.pageTitle/></title>
-  <b:include data='blog' name='all-head-content'/>
-  <link href='https://fonts.googleapis.com/css2?family=DM+Mono&amp;family=Playfair+Display:ital,wght@0,600;1,600&amp;display=swap' rel='stylesheet'/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Private Diary ♡</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
 
-  <b:skin><![CDATA[
+  <style>
     :root {
       --pink: #f4b5c5;
       --light: #fff0f3;
@@ -217,7 +211,6 @@
       letter-spacing: 2px;
       font-size: 9px;
     }
-    .blog-pager { display: none; }
     @media(max-width:650px) {
       .container { margin: 15px auto; max-width: 96%; }
       .header { padding: 35px 20px; }
@@ -227,52 +220,51 @@
       .posts { order: 2; }
       .topbar { font-size: 8px; letter-spacing: 1px; }
     }
-  ]]></b:skin>
+  </style>
 </head>
 
 <body>
-  <div class='container'>
-    <div class='topbar'>
+  <div class="container">
+    <div class="topbar">
       <span>♥ PRIVATE DIARY ♥</span>
       <span>PLEASE DON'T TELL ANYONE</span>
     </div>
 
-    <header class='header'>
-      <h1><data:blog.title/></h1>
+    <header class="header">
+      <h1>My Secret Diary</h1>
       <p>♡ a little love never hurt anybody ♡</p>
     </header>
 
-    <nav class='nav'>
-      <a expr:href='data:blog.homepageUrl'>Home</a>
-      <a expr:href='data:blog.homepageUrl + "p/about.html"'>About</a>
-      <a expr:href='data:blog.homepageUrl + "search"'>Search</a>
-      <a expr:href='data:blog.homepageUrl + "search/label/Diary"'>Diary</a>
-      <a expr:href='data:blog.homepageUrl + "archive"'>Archive</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#diary">Diary</a>
+      <a href="#archive">Archive</a>
     </nav>
 
-    <div class='content'>
-      <aside class='sidebar'>
-        <div class='widget profile'>
-          <div class='widget-title'>♡ THE OWNER ♡</div>
-          <img alt='Profile picture' src='https://file.garden/aVulH1O9NxbH0kED/%D9%AC%D9%AC%20%20%C2%A1%20%F0%9D%99%89%20%E1%B4%80%E1%B4%9Bs%E1%B4%9C%E1%B4%8B%C9%AA%20%F0%9D%99%80%20%E1%B4%87%E1%B4%85%C9%AA%E1%B4%9B!%20%20_%E1%B0%94.jpg'/>
-          <h2><data:blog.title/></h2>
-          <p><data:blog.description/></p>
-          <div class='heart'>♥ ♥ ♥</div>
+    <div class="content">
+      <aside class="sidebar">
+        <div class="widget profile" id="about">
+          <div class="widget-title">♡ THE OWNER ♡</div>
+          <img alt="Profile picture" src="https://file.garden/aVulH1O9NxbH0kED/%D9%AC%D9%AC%20%20%C2%A1%20%F0%9D%99%89%20%E1%B4%80%E1%B4%9Bs%E1%B4%9C%E1%B4%8B%C9%AA%20%F0%9D%99%80%20%E1%B4%87%E1%B4%85%C9%AA%E1%B4%9B!%20%20_%E1%B0%94.jpg" />
+          <h2>Natsuki</h2>
+          <p>Welcome to my little corner of the internet. Writing down all my thoughts and secrets here.</p>
+          <div class="heart">♥ ♥ ♥</div>
         </div>
 
-        <div class='widget'>
-          <div class='widget-title'>♡ CURRENT STATUS ♡</div>
-          <div class='status'>
-            <b>LOVE:</b> 100%<br/>
-            <b>MOOD:</b> obsessed<br/>
-            <b>THINKING ABOUT:</b> you<br/>
+        <div class="widget">
+          <div class="widget-title">♡ CURRENT STATUS ♡</div>
+          <div class="status">
+            <b>LOVE:</b> 100%<br />
+            <b>MOOD:</b> obsessed<br />
+            <b>THINKING ABOUT:</b> you<br />
             <b>HEART:</b> yours
           </div>
         </div>
 
-        <div class='widget'>
-          <div class='widget-title'>♡ THINGS I LOVE ♡</div>
-          <ul class='love-list'>
+        <div class="widget">
+          <div class="widget-title">♡ THINGS I LOVE ♡</div>
+          <ul class="love-list">
             <li>Pink roses</li>
             <li>Love letters</li>
             <li>Pretty ribbons</li>
@@ -281,125 +273,77 @@
           </ul>
         </div>
 
-        <div class='widget'>
-          <div class='widget-title'>♡ NOW PLAYING ♡</div>
-          <div class='music-player'>
-            <div class='song-title'>Britney Spears — If U Seek Amy</div>
-            <audio controls='controls' preload='none'>
-              <source src='https://file.garden/aVulH1O9NxbH0kED/Britney%20Spears%20-%20If%20U%20Seek%20Amy%20(Audio).mp3' type='audio/mpeg'/>
+        <div class="widget">
+          <div class="widget-title">♡ NOW PLAYING ♡</div>
+          <div class="music-player">
+            <div class="song-title">Britney Spears — If U Seek Amy</div>
+            <audio controls="controls" preload="none">
+              <source src="https://file.garden/aVulH1O9NxbH0kED/Britney%20Spears%20-%20If%20U%20Seek%20Amy%20(Audio).mp3" type="audio/mpeg" />
               Your browser does not support the audio player.
             </audio>
             <p>♫ a little song for you ♡</p>
           </div>
         </div>
 
-        <div class='widget'>
-          <div class='widget-title'>♡ LITTLE SECRET ♡</div>
-          <div style='text-align:center;line-height:1.8;'>
-            <p>&quot;If I can't have your heart, nobody can.&quot;</p>
-            <span class='heart'>♡</span>
+        <div class="widget">
+          <div class="widget-title">♡ LITTLE SECRET ♡</div>
+          <div style="text-align:center;line-height:1.8;">
+            <p>"If I can't have your heart, nobody can."</p>
+            <span class="heart">♡</span>
           </div>
         </div>
       </aside>
 
-      <main class='posts'>
-        <b:section class='main' id='main' showaddelement='no'>
-          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-              <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-              <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-              <b:widget-setting name='showAuthor'>false</b:widget-setting>
-              <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-              <b:widget-setting name='showLabels'>true</b:widget-setting>
-              <b:widget-setting name='showLocation'>false</b:widget-setting>
-              <b:widget-setting name='showPostLabels'>true</b:widget-setting>
-              <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-              <b:widget-setting name='showInlineAds'>false</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-              <b:if cond='data:blog.pageType == "index"'>
-                <b:loop values='data:posts' var='post'>
-                  <article class='post'>
-                    <b:if cond='data:post.title'>
-                      <h2 class='post-title'>
-                        <a expr:href='data:post.url'><data:post.title/></a>
-                      </h2>
-                    </b:if>
-                    <div class='post-body'>
-                      <data:post.body/>
-                    </div>
-                    <div class='post-meta'>
-                      <span>
-                        <a expr:href='data:post.url'><data:post.timestamp/></a>
-                        <b:if cond='data:post.allowComments'>
-                          · <a expr:href='data:post.addCommentUrl'>Comments</a>
-                        </b:if>
-                      </span>
-                      <span>
-                        <b:loop values='data:post.labels' var='label'>
-                          <a expr:href='data:label.url'>#<data:label.name/></a>
-                        </b:loop>
-                      </span>
-                    </div>
-                  </article>
-                </b:loop>
-              <b:else/>
-                <b:loop values='data:posts' var='post'>
-                  <article class='post'>
-                    <b:if cond='data:post.title'>
-                      <h2 class='post-title'><data:post.title/></h2>
-                    </b:if>
-                    <div class='post-body'><data:post.body/></div>
-                    <div class='post-meta'>
-                      <span><data:post.timestamp/></span>
-                      <span>
-                        <b:loop values='data:post.labels' var='label'>
-                          <a expr:href='data:label.url'>#<data:label.name/></a>
-                        </b:loop>
-                      </span>
-                    </div>
-                    <b:if cond='data:blog.pageType == "item"'>
-                      <div class='comments'>
-                        <b:include data='post' name='comments'/>
-                      </div>
-                    </b:if>
-                  </article>
-                </b:loop>
-              </b:if>
-              <div class='pager'>
-                <b:if cond='data:newerPageUrl'>
-                  <a expr:href='data:newerPageUrl'>← NEWER</a>
-                </b:if>
-                ♥ ♥ ♥
-                <b:if cond='data:olderPageUrl'>
-                  <a expr:href='data:olderPageUrl'>OLDER →</a>
-                </b:if>
-              </div>
-            </b:includable>
-            <b:includable id='comments' var='post'>
-              <div class='comments' id='comments'>
-                <h3>♡ COMMENTS ♡</h3>
-                <b:if cond='data:post.allowComments'>
-                  <a expr:href='data:post.addCommentUrl'>Leave a comment</a>
-                </b:if>
-                <b:loop values='data:post.comments' var='comment'>
-                  <div class='comment-block'>
-                    <b><data:comment.author/></b>
-                    <p><data:comment.body/></p>
-                  </div>
-                </b:loop>
-              </div>
-            </b:includable>
-          </b:widget>
-        </b:section>
+      <main class="posts" id="diary">
+        <!-- POST 1 -->
+        <article class="post">
+          <h2 class="post-title">
+            <a href="#post-1">Entry #02: Late Night Thoughts</a>
+          </h2>
+          <div class="post-body">
+            <p>I couldn't sleep tonight, so I decided to update my diary instead. Everything feels so quiet when everyone else is asleep, and it gives me time to think about everything that happened today.</p>
+            <blockquote>"Every little detail stays in my mind longer than it should."</blockquote>
+            <p>I hope tomorrow goes just as smoothly. Until then, keeping these words locked away right here.</p>
+          </div>
+          <div class="post-meta">
+            <span>November 12, 2026</span>
+            <span>
+              <a href="#diary">#Diary</a>
+              <a href="#thoughts">#LateNight</a>
+            </span>
+          </div>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="post">
+          <h2 class="post-title">
+            <a href="#post-2">Entry #01: Welcome to My Page</a>
+          </h2>
+          <div class="post-body">
+            <p>Finally finished setting up my new personal site! No algorithms, no noise—just a cozy pink space to write letters, save memories, and listen to my favorite tracks.</p>
+            <p>To add more entries later, just copy and paste an <code><article class="post"></code> block right above this one in your HTML file.</p>
+          </div>
+          <div class="post-meta">
+            <span>November 10, 2026</span>
+            <span>
+              <a href="#diary">#Diary</a>
+              <a href="#personal">#Personal</a>
+            </span>
+          </div>
+        </article>
+
+        <div class="pager" id="archive">
+          <a href="#">← NEWER</a>
+          ♥ ♥ ♥
+          <a href="#">OLDER →</a>
+        </div>
       </main>
     </div>
 
-    <footer class='footer'>
+    <footer class="footer">
       MADE WITH LOVE ♥ FOREVER AND ALWAYS
-      <br/><br/>
-      <data:blog.title/> © 2026
+      <br /><br />
+      MY SECRET DIARY © 2026
     </footer>
   </div>
 </body>
